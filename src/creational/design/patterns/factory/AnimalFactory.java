@@ -1,6 +1,10 @@
 package creational.design.patterns.factory;
 
 public class AnimalFactory {
+
+    private AnimalFactory() {
+        //Factory sınıfının nesnesinin oluşturulmasını da engellemiş olalım
+    }
     //Factory design pattern'da görüldüğü üzere animalType üzerinden bir switch-case var.
     //Her yeni animalType için bir case eklemek gerekli
     //SOLID prensiblerinden Open-Closed ilkesine uygun bir kod yazım şekli değildir
