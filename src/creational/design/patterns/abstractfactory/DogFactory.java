@@ -1,10 +1,8 @@
 package creational.design.patterns.abstractfactory;
 
-import creational.design.patterns.factory.Animal;
-
-public class DogFactory implements AnimalFactory {
+public class DogFactory implements IAbstractFactory {
     @Override
-    public Animal createAnimal() {
+    public IAnimal createAnimal() {
         return new Dog();
     }
 }

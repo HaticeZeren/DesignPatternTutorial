@@ -3,7 +3,6 @@ import creational.design.patterns.builder.House;
 import creational.design.patterns.builder.Kitchen;
 import creational.design.patterns.factory.Animal;
 import creational.design.patterns.factory.AnimalFactory;
-import creational.design.patterns.abstractfactory.*;
 import creational.design.patterns.singleton.Singleton;
 
 public class Main {
@@ -16,17 +15,6 @@ public class Main {
         dog.speak();
         Animal cat = AnimalFactory.getAnimal("cat");
         cat.speak();
-
-        //Abstract Factory kullanım örneği
-        creational.design.patterns.abstractfactory.AnimalFactory factory = null;
-
-        factory = new DogFactory();
-        Animal dogAnimal = factory.createAnimal();
-        dogAnimal.speak();
-
-        factory = new CatFactory();
-        Animal catAnimal = factory.createAnimal();
-        catAnimal.speak();
 
         //Builder Design Pattern
         //builder sayesinde birden fazla farklı nesneye bağlı olan bol parametreli bir nesneyi

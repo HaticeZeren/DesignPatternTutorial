@@ -1,8 +1,6 @@
 package creational.design.patterns.abstractfactory;
 
-import creational.design.patterns.factory.Animal;
-
-public class Dog implements Animal {
+public class Dog implements IAnimal {
     @Override
     public void speak() {
         System.out.println("Hav Hav Hav Hav");
